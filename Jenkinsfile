@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Chekout') {
+        stage('Build') {
             steps {
-                git url: 'https://github.com/artbaca/nodejs-restapi-mongo.git', branch: 'main'
-                echo 'Checkout Completed'
+                echo 'Building..'
             }
         }
         stage('Test') {
